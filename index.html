@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,13 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- customizing your config -->
     <script>
       tailwind.config = {
@@ -22,10 +29,55 @@
         },
       };
     </script>
-    <!-- google font -->
+    <!-- google font style -->
+    <style>
+      .manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+    <!-- adding font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
-    <header></header>
+  <body class="manrope">
+    <header class="container mx-auto">
+      <!-- header-banner section -->
+      <div class="hero">
+        <div class="hero-content flex-col-reverse lg:flex-row-reverse">
+          <div>
+            <img src="./images/banner.png" class="" />
+            <div
+              class="-mt-20 flex items-center gap-4 drop-shadow-xl bg-white w-52 p-3"
+            >
+              <div>
+                <i class="fa-solid fa-star fa-beat" style="color: #fbbe26"></i>
+              </div>
+              <div>
+                <h1>5.00</h1>
+                <p>Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-6xl font-extrabold">
+              It's good <br />
+              tea time at The <br />
+              Tea House
+            </h1>
+            <p class="py-6 text-xl">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button class="btn btn-primary">Explore more</button>
+          </div>
+        </div>
+      </div>
+    </header>
     <main></main>
     <footer></footer>
   </body>
